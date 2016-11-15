@@ -2,39 +2,30 @@
 
 ## 准备工作
 
-To get started, clone this repository and install the dependencies using `npm install`.
+克隆项目，在项目目录下运行 `npm install`.
 
-We'll be working with four files for the duration of this tutorial:
 
-- `lib/main.js`, 主进程相关代码
-- `lib/renderer.js`, 渲染进程代码
-- `lib/index.html`, which will contain the HTML for the user interface
-- `lib/style.css`, which will contain the CSS to style the user interface
+- `main.js`, 主进程相关代码
+- `app/renderer.js`, 渲染进程代码
+- `app/index.html`, UI界面html文件
+- `app/style.css`, UI界面css文件
 
-In a more robust application, you might break stuff into smaller files, but—for the sake of simplicity—we're not going to.
 
-## Challenge 1: Hello World
-
-Now that we have our dependencies and some basic files, let's get our Electron application to the point where we can launch it.
-
-Everything in Electron lives inside of the `electron` library. Let's start by requiring it inside of `main.js`.
+## 第 1 节: Hello World
+在`main.js`里引用`electron`：
 
 ```js
 const electron = require('electron')
 ```
 
-Electron contains many [modules][] that we'll use for building our application. The first—and arguably, most important—that we're going to need is the `app` module. All modules exist as properties on the `electron` object. We're going to be using the `app` module pretty often, so let's store it in its own variable.
-
-[modules]: http://electron.atom.io/docs/
+Electron 包含了许多模块.. 所有的模块存在于`electron`对象的属性里。
+我们先使用 `app` 模块：
 
 ```js
 const electron = require('electron')
 const app = electron.app
 ```
-
-The [`app`][app] module has a number of life-cycle events. Here are a few examples:
-
-[app]: http://electron.atom.io/docs/api/app/
+ `app` 模块具有管理应用生命周期的事件:
 
 - `ready`
 - `quit`
