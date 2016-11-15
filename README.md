@@ -1,47 +1,13 @@
-# Build cross-platform desktop apps with Electron
+# 使用electron制作MD编辑器
 
-This is a workshop for learning how to build cross platform desktop apps with JavaScript, HTML, and CSS. We'll be using [Electron](http://electron.atom.io/) to accomplish this.
-
-## Motivation
-
-To help get you excited, take a look at some of the amazing apps that have already been built with Electron:
-
-| Atom | Slack | Visual Studio Code | Nylas N1 |
-|---|---|---|---|
-| [<img width=150 src=http://electron.atom.io/images/apps/atom.png>](https://atom.io/) | [<img width=150 src=http://electron.atom.io/images/apps/slack.png>](https://slack.com/) | [<img width=150 src=http://electron.atom.io/images/apps/vscode.png>](https://code.visualstudio.com/) | [<img width=150 src=http://electron.atom.io/images/apps/nylas.png>](https://www.nylas.com/) |
-
-| WebTorrent | Brave | Hyper | Caprine |
-|---|---|---|---|
-| [<img width=150 src=http://electron.atom.io/images/apps/WebTorrent.png>](https://webtorrent.io/) | [<img width=150 src=http://electron.atom.io/images/apps/brave.png>](https://brave.com/) | [<img width=150 src=http://electron.atom.io/images/apps/hyper.png>](https://hyper.is/) | [<img width=150 src=http://electron.atom.io/images/apps/caprine.png>](https://github.com/sindresorhus/caprine) |
-
-| Keeweb | CryptoCat | ScreenCat | Playback |
-|---|---|---|---|
-| [<img width=150 src=http://electron.atom.io/images/apps/keeweb.png>](https://keeweb.info/) | [<img width=150 src=http://electron.atom.io/images/apps/cryptocat.png>](https://crypto.cat/) | [<img width=150 src=http://electron.atom.io/images/apps/screencat.png>](http://maxogden.github.io/screencat/) | [<img width=150 src=https://mafintosh.github.io/playback/images/icon.png>](https://mafintosh.github.io/playback/) |
-
-For more, take a look at this [huge list of Electron apps](http://electron.atom.io/apps/).
-
-## Credit
-
-Vast portions of this workshop are based on a similar [workshop](https://gist.github.com/stevekinney/d1abe98d2f4f8cfae403cb86b7963a41) created by Steve Kinney. If you like it, check out his book [Electron In Action](https://www.manning.com/books/electron-in-action).
-
-## Prerequisites
-
-Participants should have the latest version of [Node.js](http://nodejs.org/) installed. (The latest version is v6.x LTS.)
-
-We'll primarily be working through one project today. But there is a second one, which is an opportunity to practice on your own after the workshop. The _best_ way to get set up and ready to roll before the workshop is to clone this repository and run `npm install` within it.
-
-# Markdown Editor
-
-This is a tutorial for building a Markdown-to-HTML renderer using Electron.
-
-## Getting Started and Acclimated
+## 准备工作
 
 To get started, clone this repository and install the dependencies using `npm install`.
 
 We'll be working with four files for the duration of this tutorial:
 
-- `lib/main.js`, which will contain code for the main process
-- `lib/renderer.js`, which will code for the renderer process
+- `lib/main.js`, 主进程相关代码
+- `lib/renderer.js`, 渲染进程代码
 - `lib/index.html`, which will contain the HTML for the user interface
 - `lib/style.css`, which will contain the CSS to style the user interface
 
